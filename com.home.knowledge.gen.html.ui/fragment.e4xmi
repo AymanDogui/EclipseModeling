@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_CDlewJFEEea9KrdvPFS2xw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_H3JY0JFEEea9KrdvPFS2xw" featurename="commands" parentElementId="xpath:/">
+    <elements xsi:type="commands:Command" xmi:id="_XjQFUJFEEea9KrdvPFS2xw" elementId="com.home.knowledge.gen.html.ui.command.generatehtml" commandName="Generate Html"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_L_DCUJFEEea9KrdvPFS2xw" featurename="handlers" parentElementId="xpath:/">
+    <elements xsi:type="commands:Handler" xmi:id="_--pcMJFFEea9KrdvPFS2xw" elementId="com.home.knowledge.gen.html.ui.handler.0" contributionURI="bundleclass://com.home.knowledge.gen.html.ui/GenerateHtmlHandler" command="_XjQFUJFEEea9KrdvPFS2xw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_O_iX0JFEEea9KrdvPFS2xw" featurename="menuContributions" parentElementId="xpath:/">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_Ni0QQJFGEea9KrdvPFS2xw" elementId="com.home.knowledge.gen.html.ui.menucontribution.0" positionInParent="after=additions" parentId="com.home.knowledge.presentation.KnowledgeEditorID">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_fG7nQJFGEea9KrdvPFS2xw" elementId="com.home.knowledge.gen.html.ui.handledmenuitem.generatemyhtml" label="Generate my HTML" command="_XjQFUJFEEea9KrdvPFS2xw">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_s7ATwJFJEea9KrdvPFS2xw" coreExpressionId="com.home.knowledge.gen.html.ui.organisationSelected"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

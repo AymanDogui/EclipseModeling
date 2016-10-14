@@ -1,0 +1,13 @@
+public class EFactory(){
+
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+		public org.eclipse.emf.ecore.EObject org.eclipse.emf.ecore.EObject 
+	
+		public java.lang.Object java.lang.Object 
+	
+		public java.lang.String java.lang.String 
+	
+
+}

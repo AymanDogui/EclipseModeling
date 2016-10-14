@@ -1,0 +1,8 @@
+public class ETypeParameter(){
+
+ 	 private String name;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+
+}

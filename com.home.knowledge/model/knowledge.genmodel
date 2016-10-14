@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.home.knowledge/src-gen" modelPluginID="com.home.knowledge"
+    templateDirectory="/com.home.knowledge/templates" dynamicTemplates="true" modelName="Knowledge"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" suppressEMFTypes="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    interfaceNamePattern="M{0}" classNamePattern="M{0}Impl" operationReflection="true">
+  <foreignModel>knowledge.ecore</foreignModel>
+  <genPackages prefix="Knowledge" basePackage="com.home" disposableProviderFactory="true"
+      ecorePackage="knowledge.ecore#/">
+    <genClasses ecoreClass="knowledge.ecore#//Experience">
+      <genFeatures createChild="false" propertyCategory="" propertyDescription="name of the experience"
+          ecoreFeature="ecore:EAttribute knowledge.ecore#//Experience/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference knowledge.ecore#//Experience/problems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference knowledge.ecore#//Experience/solutions"/>
+    </genClasses>
+    <genClasses ecoreClass="knowledge.ecore#//Problem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute knowledge.ecore#//Problem/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference knowledge.ecore#//Problem/solutions"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference knowledge.ecore#//Problem/parentExp"/>
+    </genClasses>
+    <genClasses ecoreClass="knowledge.ecore#//Solution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute knowledge.ecore#//Solution/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute knowledge.ecore#//Solution/description"/>
+    </genClasses>
+    <genClasses ecoreClass="knowledge.ecore#//Organisation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute knowledge.ecore#//Organisation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference knowledge.ecore#//Organisation/experiences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference knowledge.ecore#//Organisation/currentProblem"/>
+      <genOperations ecoreOperation="knowledge.ecore#//Organisation/findSolution">
+        <genParameters ecoreParameter="knowledge.ecore#//Organisation/findSolution/problem"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

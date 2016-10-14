@@ -1,0 +1,8 @@
+public class EAnnotation(){
+
+ 	 private String source;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+
+}

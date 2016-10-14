@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<?eclipse version="3.0"?>
+<plugin>
+	<extension point="org.eclipse.emf.ecore.generated_package">
+		<package 
+			uri = "http://www.home.com/rh/xtext/RhDsl"
+			class = "com.home.rh.xtext.rhDsl.RhDslPackage"
+			genModel = "model/generated/RhDsl.genmodel" />
+	</extension>
+</plugin>

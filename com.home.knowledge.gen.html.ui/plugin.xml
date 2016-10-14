@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc.xml">
+      </toc>
+      <toc
+            file="testToc.xml"
+            primary="true">
+      </toc>
+   </extension>
+   <extension
+         id="com.home.knowledge.gen.html.ui.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.home.knowledge.gen.html.ui.organisationSelected">
+         <iterate>
+            <instanceof
+                  value="com.home.knowledge.Organisation">
+            </instanceof>
+         </iterate>
+      </definition>
+   </extension>
+
+</plugin>

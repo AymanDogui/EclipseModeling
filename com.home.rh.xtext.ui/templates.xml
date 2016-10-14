@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="com.home.rh.xtext.RhDsl.kw_Task" deleted="false" description="create default task" enabled="true" name="defaultTask">Task documentation responsable John description "must do something" startDate  1/12/14 duration 5 days</template></templates>

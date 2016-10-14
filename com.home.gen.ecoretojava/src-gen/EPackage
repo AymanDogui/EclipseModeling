@@ -1,0 +1,12 @@
+public class EPackage(){
+
+ 	 private String name;
+ 	 private String nsURI;
+ 	 private String nsPrefix;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+		public org.eclipse.emf.ecore.EClassifier org.eclipse.emf.ecore.EClassifier 
+	
+
+}

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.home.rh.xtext
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: com.home.rh.xtext; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib,
+ org.eclipse.emf.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.home.rh.xtext,
+ com.home.rh.xtext.services,
+ com.home.rh.xtext.parser.antlr,
+ com.home.rh.xtext.serializer,
+ com.home.rh.xtext.parser.antlr.internal,
+ com.home.rh.xtext.rhDsl,
+ com.home.rh.xtext.generator,
+ com.home.rh.xtext.rhDsl.impl,
+ com.home.rh.xtext.validation,
+ com.home.rh.xtext.scoping,
+ com.home.rh.xtext.rhDsl.util,
+ com.home.rh.xtext.formatting2
+Import-Package: org.apache.log4j

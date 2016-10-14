@@ -1,0 +1,47 @@
+grammar com.home.rh.xtext.RhDsl with org.eclipse.xtext.common.Terminals
+
+generate rhDsl "http://www.home.com/rh/xtext/RhDsl"
+
+Company returns Company:
+	{Company}
+	'Company'
+	name=ID
+	'{' 
+		('employees' '{' employees+=Employee * '}')
+		projects+=Project *
+	'}';
+
+
+Employee returns Employee:
+	'Employee'
+	name=ID
+	('weight' weight=INT)?
+	('height' height=INT)?
+;
+
+Project returns Project:
+	'Project'
+	name=ID
+	('type' type=STRING)
+	'{'
+		( tasks+=Task * )
+	'}'
+	
+;
+
+Task returns Task:
+	'Task'
+	name=ID
+	'responsable' responsable=[Employee]
+	'description' description=STRING
+	'startDate' startDate=DATE
+	'duration' duration=INT durationType=DurationType
+	('subtasks' '{' subtasks+=Task *'}' )?
+	
+;
+
+enum DurationType : hours = 'hours' | days='days' ;
+
+terminal DATE: (('1'..'9')| (!'00'| ('0'..'2')('0'..'9') | '3' ('0'..'1')))
+					'/' (('1'..'9')|('1' ('0'..'2')))
+					'/' ('1')('4'..'6'); 

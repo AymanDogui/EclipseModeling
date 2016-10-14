@@ -1,0 +1,38 @@
+public class EClass(){
+
+ 	 private String name;
+ 	 private String instanceClassName;
+ 	 private Class instanceClass;
+ 	 private Object defaultValue;
+ 	 private String instanceTypeName;
+ 	 private boolean abstract;
+ 	 private boolean interface;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+		public boolean boolean 
+	
+		public int int 
+	
+		public boolean boolean 
+	
+		public int int 
+	
+		public org.eclipse.emf.ecore.EStructuralFeature org.eclipse.emf.ecore.EStructuralFeature 
+	
+		public int int 
+	
+		public org.eclipse.emf.ecore.EStructuralFeature org.eclipse.emf.ecore.EStructuralFeature 
+	
+		public int int 
+	
+		public org.eclipse.emf.ecore.EOperation org.eclipse.emf.ecore.EOperation 
+	
+		public int int 
+	
+		public org.eclipse.emf.ecore.EOperation org.eclipse.emf.ecore.EOperation 
+	
+		public org.eclipse.emf.ecore.EGenericType org.eclipse.emf.ecore.EGenericType 
+	
+
+}

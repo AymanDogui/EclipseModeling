@@ -1,0 +1,16 @@
+public class EClassifier(){
+
+ 	 private String name;
+ 	 private String instanceClassName;
+ 	 private Class instanceClass;
+ 	 private Object defaultValue;
+ 	 private String instanceTypeName;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+		public boolean boolean 
+	
+		public int int 
+	
+
+}

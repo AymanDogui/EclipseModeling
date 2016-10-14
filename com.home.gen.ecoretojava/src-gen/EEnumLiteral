@@ -1,0 +1,11 @@
+public class EEnumLiteral(){
+
+ 	 private String name;
+ 	 private int value;
+ 	 private org.eclipse.emf.common.util.Enumerator instance;
+ 	 private String literal;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+
+}

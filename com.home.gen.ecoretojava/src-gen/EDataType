@@ -1,0 +1,17 @@
+public class EDataType(){
+
+ 	 private String name;
+ 	 private String instanceClassName;
+ 	 private Class instanceClass;
+ 	 private Object defaultValue;
+ 	 private String instanceTypeName;
+ 	 private boolean serializable;
+
+		public org.eclipse.emf.ecore.EAnnotation org.eclipse.emf.ecore.EAnnotation 
+	
+		public boolean boolean 
+	
+		public int int 
+	
+
+}

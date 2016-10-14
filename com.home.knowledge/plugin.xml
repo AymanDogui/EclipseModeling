@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.emf.ecore.factory_override">
+      <factory
+            uri="http://www.home.knowledge/1.0"
+            class="com.home.knowledge.impl.KnowledgeFactoryImpl">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.home.knowledge/1.0"
+            class="com.home.knowledge.MKnowledgePackage">
+      </package>
+   </extension>
+
+</plugin>
